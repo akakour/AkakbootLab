@@ -43,3 +43,9 @@ build/
 !/HELP.md
 src/main/resources/static/
 src/main/resources/templates/
+!/AkabootLab.iml
+!/mvnw.cmd
+!/.mvn/
+!/.idea/
+!/mvnw
+!/HELP.md
