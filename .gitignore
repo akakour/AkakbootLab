@@ -49,3 +49,6 @@ src/main/resources/templates/
 !/.idea/
 !/mvnw
 !/HELP.md
+!/AkabootLab.iml
+AkabootLab.iml
+!/.idea/

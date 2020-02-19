@@ -1,20 +1,15 @@
-## SpringBoot 整合 api文档框架Swagger2
-### jar包导入
-```xml
-<!--    swagger2 相关-->
-<dependency>
-     <groupId>io.springfox</groupId>
-      <artifactId>springfox-swagger2</artifactId>
-      <version>2.9.2</version>
-</dependency>
-<dependency>
-       <groupId>io.springfox</groupId>
-        <artifactId>springfox-swagger-ui</artifactId>
-        <version>2.9.2</version>
-</dependency>
-```
-### 修改配置文件，配置类
-```java
+package com.akakour.lab.swagger.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import springfox.documentation.builders.ApiInfoBuilder;
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.service.Contact;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
@@ -35,7 +30,3 @@ public class SwaggerConfig {
                         .build());
     }
 }
-```
-### swagger2 相关注解的使用
-### 浏览器访问
-### 高级应用
